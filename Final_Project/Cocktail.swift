@@ -39,7 +39,7 @@ struct Cocktail: View {
                     .foregroundColor(.white)
                 }
             )
-            NavigationLink (
+            /*NavigationLink (
                 destination: SearchByRandom(),
                 label: {
                     HStack {
@@ -52,7 +52,7 @@ struct Cocktail: View {
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                 }
-            )
+            )*/
             NavigationLink (
                 destination: SearchByIngredient(),
                 label: {

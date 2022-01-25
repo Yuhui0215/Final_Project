@@ -14,20 +14,9 @@ struct CocktailData: Codable {
 struct StoreItemCocktail: Codable {
     let idDrink: String
     let strDrink: String
-    //let strDrinkAlternate: String?
-    //let strTags: String?
-    //let strVideo: String?
-    //let strCategory: String?
-    //let strIBA: String?
-    //let strAlcoholic: String?
-    let strGlass: String?
+    //step
     let strInstructions: String?
-    let strInstructionsES: String?
-    let strInstructionsDE: String?
-    let strInstructionsFR: String?
-    let strInstructionsIT: String?
-    //let strInstructionsZH-HANS: Int
-    //let strInstructionsZH-HANT: Int
+    // picture
     let strDrinkThumb: String?
     let strIngredient1: String?
     let strIngredient2: String?
@@ -44,6 +33,7 @@ struct StoreItemCocktail: Codable {
     let strIngredient13: String?
     let strIngredient14: String?
     let strIngredient15: String?
+    // how much
     let strMeasure1: String?
     let strMeasure2: String?
     let strMeasure3: String?
@@ -59,9 +49,4 @@ struct StoreItemCocktail: Codable {
     let strMeasure13: String?
     let strMeasure14: String?
     let strMeasure15: String?
-    //let strImageSource: Int
-    //let strImageAttribution: Int
-    //let strCreativeCommonsConfirmed: Int
-    
-    
 }

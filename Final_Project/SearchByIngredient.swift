@@ -8,9 +8,36 @@
 import SwiftUI
 
 struct SearchByIngredient: View {
+    //@StateObject var cocktailJson = CocktailJson()
+    //@State private var name = "酒精"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("2313")
+            /*
+             Form {
+                 TextField("name", text: self.$name)
+                     .font(.system(size: 18))
+             }
+             List {
+                ForEach(cocktailJson.items, id: \.idDrink) { item in
+                    NextPageView(data: item)
+                }
+            }*/
+        }
     }
+    
+    /*struct NextPageView: View {
+        let data : StoreItemCocktail
+        var body: some View {
+            NavigationLink(
+                destination: Recipe(data: data),
+                label: {
+                    Text(data.idDrink)
+                }
+            )
+        }
+    }*/
 }
 
 struct SearchByIngredient_Previews: PreviewProvider {

@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct CocktailRow: View {
-    //let data: StoreItem
+    var data: StoreItemCocktail
     var body: some View {
         //Text(data.strDrink)
         Text("2132")
     }
 }
 
-struct CocktailRow_Previews: PreviewProvider {
+/*struct CocktailRow_Previews: PreviewProvider {
     static var previews: some View {
         CocktailRow()
     }
-}
+}*/

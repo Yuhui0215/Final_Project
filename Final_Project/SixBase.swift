@@ -8,17 +8,41 @@
 import SwiftUI
 
 struct SixBase: View {
-    @StateObject var baseJson = BaseJson()
     var body: some View {
-        Text("23132")
-        /*VStack {
-            List {
-                ForEach(items, id: \.idDrink) { item in
-                    Row(data: item)
-                }
+        NavigationView {
+            TabView {
+                NextPageView(name: "vodka")
+                NextPageView(name: "tequila")
+                NextPageView(name: "gin")
+                NextPageView(name: "rum")
+                NextPageView(name: "whiskey")
+                NextPageView(name: "brandy")
             }
-        }*/
+            .tabViewStyle(PageTabViewStyle())
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            .navigationTitle("六大基酒介紹")
+        }
+        
     }
+    
+    struct NextPageView: View {
+        let name: String
+            var body: some View {
+                NavigationLink(
+                    destination: Base(baseName: name),
+                    label: {
+                        HStack {
+                            Image(systemName: "book.fill")
+                            Text(name)
+                        }
+                        .padding()
+                        .background(Color.black)
+                        .cornerRadius(20)
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                    })
+            }
+        }
 }
 
 struct SixBase_Previews: PreviewProvider {
