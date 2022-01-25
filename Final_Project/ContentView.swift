@@ -1,16 +1,21 @@
 //
 //  ContentView.swift
-//  Final_Project
+//  Project
 //
-//  Created by Len on 2022/1/25.
+//  Created by Len on 2022/1/18.
 //
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        /*ZStack {
+            Image("")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 500, height: 800)
+                .ignoresSafeArea()
+        }*/
+        Text("123")
     }
 }
 
