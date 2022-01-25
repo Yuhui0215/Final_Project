@@ -16,7 +16,7 @@ struct Cocktail: View {
                 label: {
                     HStack {
                         Image(systemName: "hammer.fill")
-                            Text("開始製作")
+                            Text("以名稱搜尋")
                     }
                     .padding()
                     .background(Color.black)
@@ -30,7 +30,7 @@ struct Cocktail: View {
                 label: {
                     HStack {
                         Image(systemName: "book.fill")
-                        Text("使用說明")
+                        Text("以字首搜尋")
                     }
                     .padding()
                     .background(Color.black)
@@ -44,7 +44,7 @@ struct Cocktail: View {
                 label: {
                     HStack {
                         Image(systemName: "book.fill")
-                        Text("使用說明")
+                        Text("以成份搜尋")
                     }
                     .padding()
                     .background(Color.black)
@@ -58,7 +58,7 @@ struct Cocktail: View {
                 label: {
                     HStack {
                         Image(systemName: "book.fill")
-                        Text("使用說明")
+                        Text("以有/無酒精搜尋")
                     }
                     .padding()
                     .background(Color.black)
@@ -72,7 +72,7 @@ struct Cocktail: View {
                 label: {
                     HStack {
                         Image(systemName: "book.fill")
-                        Text("使用說明")
+                        Text("隨機推薦酒譜")
                     }
                     .padding()
                     .background(Color.black)

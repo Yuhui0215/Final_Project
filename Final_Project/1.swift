@@ -2,13 +2,13 @@
 //  CocktailJson.swift
 //  Final_Project
 //
-//  Created by User08 on 2022/1/26.
+//  Created by User08 on 2022/1/25.
 //
 
 import Foundation
 
 class CocktailJson: ObservableObject {
-    @Published var items = [StoreItemCocktail]()
+    @Published var items = [StoreItem]()
     
     init() {
         fetch(function: "search", type: "s", keyword: "margarrita")
@@ -23,14 +23,12 @@ class CocktailJson: ObservableObject {
                         let decoder = JSONDecoder()
                         decoder.dateDecodingStrategy = .iso8601
                         let item = try decoder.decode(CocktailData.self, from: data)
-                        DispatchQueue.main.async {
-                            items = item.drinks
+                        items = item.drinks
                             //print(items)
+                        } catch {
+                            print(error)
                         }
-                    } catch {
-                        print(error)
                     }
-                }
                 else {
                     print(error)
                 }

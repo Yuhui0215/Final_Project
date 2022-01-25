@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556493C527A04CA4004CE315 /* NameJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556493C427A04CA4004CE315 /* NameJson.swift */; };
+		556493C827A04CB6004CE315 /* FirstLetterJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556493C727A04CB6004CE315 /* FirstLetterJson.swift */; };
+		556493CB27A04CD2004CE315 /* RandomJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556493CA27A04CD2004CE315 /* RandomJson.swift */; };
+		556493CE27A04D03004CE315 /* IngredientJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556493CD27A04D03004CE315 /* IngredientJson.swift */; };
+		556493D127A04D30004CE315 /* AlcoholOrNotJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556493D027A04D30004CE315 /* AlcoholOrNotJson.swift */; };
+		556493E027A05A20004CE315 /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556493DF27A05A20004CE315 /* BaseData.swift */; };
+		556493E527A06FD3004CE315 /* BaseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556493E427A06FD3004CE315 /* BaseJson.swift */; };
+		556493EB27A07742004CE315 /* CocktailJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556493EA27A07742004CE315 /* CocktailJson.swift */; };
 		BFA22C9C27A03A1600968214 /* SearchByName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22C9B27A03A1600968214 /* SearchByName.swift */; };
 		BFA22C9F27A03A7000968214 /* SearchByFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22C9E27A03A7000968214 /* SearchByFirstLetter.swift */; };
 		BFA22CA227A03A8E00968214 /* SearchByRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CA127A03A8E00968214 /* SearchByRandom.swift */; };
 		BFA22CA627A03B2100968214 /* SearchByIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CA527A03B2100968214 /* SearchByIngredient.swift */; };
 		BFA22CA927A03BC400968214 /* ListOfAlcoholOrNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CA827A03BC400968214 /* ListOfAlcoholOrNot.swift */; };
-		BFA22CAC27A03D0C00968214 /* SixBasicAlcohol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CAB27A03D0C00968214 /* SixBasicAlcohol.swift */; };
-		BFA22CAF27A03D8100968214 /* CocktailJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CAE27A03D8100968214 /* CocktailJson.swift */; };
+		BFA22CAC27A03D0C00968214 /* SixBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CAB27A03D0C00968214 /* SixBase.swift */; };
+		BFA22CAF27A03D8100968214 /* CocktailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CAE27A03D8100968214 /* CocktailData.swift */; };
 		BFA22CB327A03DC700968214 /* CocktailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CB227A03DC700968214 /* CocktailRow.swift */; };
 		BFA22CB627A03EC400968214 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA22CB527A03EC400968214 /* Recipe.swift */; };
 		BFCCA234279FBF5100783488 /* Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCA233279FBF5100783488 /* Final_ProjectApp.swift */; };
@@ -24,13 +32,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556493C427A04CA4004CE315 /* NameJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameJson.swift; sourceTree = "<group>"; };
+		556493C727A04CB6004CE315 /* FirstLetterJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLetterJson.swift; sourceTree = "<group>"; };
+		556493CA27A04CD2004CE315 /* RandomJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJson.swift; sourceTree = "<group>"; };
+		556493CD27A04D03004CE315 /* IngredientJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientJson.swift; sourceTree = "<group>"; };
+		556493D027A04D30004CE315 /* AlcoholOrNotJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholOrNotJson.swift; sourceTree = "<group>"; };
+		556493DF27A05A20004CE315 /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
+		556493E427A06FD3004CE315 /* BaseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJson.swift; sourceTree = "<group>"; };
+		556493EA27A07742004CE315 /* CocktailJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailJson.swift; sourceTree = "<group>"; };
 		BFA22C9B27A03A1600968214 /* SearchByName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByName.swift; sourceTree = "<group>"; };
 		BFA22C9E27A03A7000968214 /* SearchByFirstLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByFirstLetter.swift; sourceTree = "<group>"; };
 		BFA22CA127A03A8E00968214 /* SearchByRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByRandom.swift; sourceTree = "<group>"; };
 		BFA22CA527A03B2100968214 /* SearchByIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByIngredient.swift; sourceTree = "<group>"; };
 		BFA22CA827A03BC400968214 /* ListOfAlcoholOrNot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAlcoholOrNot.swift; sourceTree = "<group>"; };
-		BFA22CAB27A03D0C00968214 /* SixBasicAlcohol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixBasicAlcohol.swift; sourceTree = "<group>"; };
-		BFA22CAE27A03D8100968214 /* CocktailJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailJson.swift; sourceTree = "<group>"; };
+		BFA22CAB27A03D0C00968214 /* SixBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixBase.swift; sourceTree = "<group>"; };
+		BFA22CAE27A03D8100968214 /* CocktailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailData.swift; sourceTree = "<group>"; };
 		BFA22CB227A03DC700968214 /* CocktailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRow.swift; sourceTree = "<group>"; };
 		BFA22CB527A03EC400968214 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		BFCCA230279FBF5100783488 /* Final_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +69,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		556493C327A04C23004CE315 /* fetch json */ = {
+			isa = PBXGroup;
+			children = (
+				556493C427A04CA4004CE315 /* NameJson.swift */,
+				556493C727A04CB6004CE315 /* FirstLetterJson.swift */,
+				556493CA27A04CD2004CE315 /* RandomJson.swift */,
+				556493CD27A04D03004CE315 /* IngredientJson.swift */,
+				556493D027A04D30004CE315 /* AlcoholOrNotJson.swift */,
+			);
+			path = "fetch json";
+			sourceTree = "<group>";
+		};
+		556493DE27A059CB004CE315 /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		BFCCA227279FBF5100783488 = {
 			isa = PBXGroup;
 			children = (
@@ -78,15 +113,18 @@
 				BFCCA23C279FBF5B00783488 /* Info.plist */,
 				BFCCA239279FBF5B00783488 /* Preview Content */,
 				BFCCA24727A034D000783488 /* Cocktail.swift */,
+				556493DF27A05A20004CE315 /* BaseData.swift */,
 				BFA22C9B27A03A1600968214 /* SearchByName.swift */,
 				BFA22C9E27A03A7000968214 /* SearchByFirstLetter.swift */,
 				BFA22CA127A03A8E00968214 /* SearchByRandom.swift */,
 				BFA22CA527A03B2100968214 /* SearchByIngredient.swift */,
 				BFA22CA827A03BC400968214 /* ListOfAlcoholOrNot.swift */,
-				BFA22CAB27A03D0C00968214 /* SixBasicAlcohol.swift */,
-				BFA22CAE27A03D8100968214 /* CocktailJson.swift */,
+				BFA22CAB27A03D0C00968214 /* SixBase.swift */,
 				BFA22CB227A03DC700968214 /* CocktailRow.swift */,
 				BFA22CB527A03EC400968214 /* Recipe.swift */,
+				BFA22CAE27A03D8100968214 /* CocktailData.swift */,
+				556493E427A06FD3004CE315 /* BaseJson.swift */,
+				556493EA27A07742004CE315 /* CocktailJson.swift */,
 			);
 			path = Final_Project;
 			sourceTree = "<group>";
@@ -95,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				BFCCA23A279FBF5B00783488 /* Preview Assets.xcassets */,
+				556493DE27A059CB004CE315 /* data */,
+				556493C327A04C23004CE315 /* fetch json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -170,16 +210,24 @@
 			files = (
 				BFA22CB327A03DC700968214 /* CocktailRow.swift in Sources */,
 				BFA22CA927A03BC400968214 /* ListOfAlcoholOrNot.swift in Sources */,
-				BFA22CAC27A03D0C00968214 /* SixBasicAlcohol.swift in Sources */,
+				556493CE27A04D03004CE315 /* IngredientJson.swift in Sources */,
+				BFA22CAC27A03D0C00968214 /* SixBase.swift in Sources */,
 				BFA22CB627A03EC400968214 /* Recipe.swift in Sources */,
+				556493CB27A04CD2004CE315 /* RandomJson.swift in Sources */,
+				556493C827A04CB6004CE315 /* FirstLetterJson.swift in Sources */,
+				556493EB27A07742004CE315 /* CocktailJson.swift in Sources */,
 				BFA22CA627A03B2100968214 /* SearchByIngredient.swift in Sources */,
+				556493E027A05A20004CE315 /* BaseData.swift in Sources */,
 				BFCCA236279FBF5100783488 /* ContentView.swift in Sources */,
 				BFCCA234279FBF5100783488 /* Final_ProjectApp.swift in Sources */,
 				BFA22C9F27A03A7000968214 /* SearchByFirstLetter.swift in Sources */,
-				BFA22CAF27A03D8100968214 /* CocktailJson.swift in Sources */,
+				556493D127A04D30004CE315 /* AlcoholOrNotJson.swift in Sources */,
+				BFA22CAF27A03D8100968214 /* CocktailData.swift in Sources */,
 				BFCCA24827A034D000783488 /* Cocktail.swift in Sources */,
 				BFA22C9C27A03A1600968214 /* SearchByName.swift in Sources */,
+				556493C527A04CA4004CE315 /* NameJson.swift in Sources */,
 				BFA22CA227A03A8E00968214 /* SearchByRandom.swift in Sources */,
+				556493E527A06FD3004CE315 /* BaseJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
