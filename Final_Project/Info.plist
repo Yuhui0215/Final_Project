@@ -29,9 +29,9 @@
 	<true/>
 	<key>UILaunchScreen</key>
 	<dict>
-		<key>"lauch"</key>
-		<string></string>
 		<key>black</key>
+		<string></string>
+		<key>lauch</key>
 		<string></string>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>

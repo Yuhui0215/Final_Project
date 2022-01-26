@@ -9,23 +9,34 @@ import SwiftUI
 
 struct SearchByRandom: View {
     @StateObject var cocktailJson = CocktailJson()
+    @State private var go = false
     
     var body: some View {
         VStack {
             Text("隨機推薦一款雞尾酒")
-            List {
-                ForEach(cocktailJson.items, id: \.idDrink) { item in
-                    NextPageView(data: item)
-                }
-            }
-            /*.refreshable {
+                .font(.system(size: 25))
+            Spacer()
+                .frame(height: 20)
+            Button("推薦!") {
+                go = true
                 cocktailJson.fetch(function: "random", type: "", keyword: "")
-            }*/
+            }
+            .foregroundColor(Color(red: 0/255, green: 0/255, blue: 100/255))
+            .frame(width: 160, height: 40)
+            .background(Color(red: 192/255, green: 220/255, blue: 216/255))
+            if go == true {
+                List {
+                    ForEach(cocktailJson.items, id: \.idDrink) { item in
+                        NextPageView(data: item)
+                    }
+                }
+                .overlay(ProgressView("Loading").opacity(cocktailJson.items.isEmpty && go ? 1 : 0))
+                /*.refreshable {
+                 cocktailJson.fetch(function: "random", type: "", keyword: "")
+                 }*/
+            }
         }
-        .onAppear() {
-            cocktailJson.fetch(function: "random", type: "", keyword: "")
-        }
-        .overlay(ProgressView("Loading").opacity(cocktailJson.items.isEmpty ? 1 : 0))
+        
     }
     
     struct NextPageView: View {
@@ -34,7 +45,7 @@ struct SearchByRandom: View {
             NavigationLink(
                 destination: Recipe(data: data),
                 label: {
-                    Text(data.idDrink)
+                    Text(data.strDrink)
                 }
             )
         }

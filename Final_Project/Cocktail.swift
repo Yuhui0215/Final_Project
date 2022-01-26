@@ -9,78 +9,74 @@ import SwiftUI
 
 struct Cocktail: View {
     var body: some View {
-        HStack {
-            Text("酒譜搜尋")
-            NavigationLink (
-                destination: SearchByName(),
-                label: {
-                    HStack {
-                        Image(systemName: "hammer.fill")
+        NavigationView {
+            VStack {
+                Text("酒譜搜尋")
+                    .font(.system(size: 45))
+                    .fontWeight(.bold)
+                    .offset(x: 0, y: -50)
+                NavigationLink (
+                    destination: SearchByName(),
+                    label: {
+                        HStack {
+                            Image(systemName: "hammer.fill")
                             Text("以名稱搜尋")
+                        }
+                        .padding()
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                        .frame(width:300, height: 70)
+                        .background(Color.black)
+                        .cornerRadius(20)
                     }
-                    .padding()
-                    .background(Color.black)
-                    .cornerRadius(20)
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                }
-            )
-            NavigationLink (
-                destination: SearchByFirstLetter(),
-                label: {
-                    HStack {
-                        Image(systemName: "book.fill")
-                        Text("以字首搜尋")
+                )
+                NavigationLink (
+                    destination: SearchByFirstLetter(),
+                    label: {
+                        HStack {
+                            Image(systemName: "book.fill")
+                            Text("以字首搜尋")
+                        }
+                        .padding()
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                        .frame(width:300, height: 70)
+                        .background(Color.black)
+                        .cornerRadius(20)
                     }
-                    .padding()
-                    .background(Color.black)
-                    .cornerRadius(20)
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                }
-            )
-            /*NavigationLink (
-                destination: SearchByRandom(),
-                label: {
-                    HStack {
-                        Image(systemName: "book.fill")
-                        Text("以成份搜尋")
+                )
+                NavigationLink (
+                    destination: SearchByRandom(),
+                    label: {
+                        HStack {
+                            Image(systemName: "book.fill")
+                            Text("隨機推薦酒譜")
+                        }
+                        .padding()
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                        .frame(width:300, height: 70)
+                        .background(Color.black)
+                        .cornerRadius(20)
                     }
-                    .padding()
-                    .background(Color.black)
-                    .cornerRadius(20)
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                }
-            )*/
-            NavigationLink (
-                destination: SearchByIngredient(),
-                label: {
-                    HStack {
-                        Image(systemName: "book.fill")
-                        Text("以有/無酒精搜尋")
+                )
+                
+                NavigationLink (
+                    destination: ListOfAlcoholOrNot(),
+                    label: {
+                        HStack {
+                            Image(systemName: "book.fill")
+                            Text("以有/無酒精搜尋")
+                        }
+                        .padding()
+                        .font(.system(size: 28))
+                        .foregroundColor(.white)
+                        .frame(width:300, height: 70)
+                        .background(Color.black)
+                        .cornerRadius(20)
                     }
-                    .padding()
-                    .background(Color.black)
-                    .cornerRadius(20)
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                }
-            )
-            NavigationLink (
-                destination: ListOfAlcoholOrNot(),
-                label: {
-                    HStack {
-                        Image(systemName: "book.fill")
-                        Text("隨機推薦酒譜")
-                    }
-                    .padding()
-                    .background(Color.black)
-                    .cornerRadius(20)
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                }
-            )
+                )
+            }
         }
     }
 }

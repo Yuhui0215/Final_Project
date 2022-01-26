@@ -8,7 +8,7 @@
 import Foundation
 
 class BaseJson: ObservableObject {
-    @Published var description: String = ""
+    @Published var items = [StoreItemBase]()
 
     init() {
         fetch(name: "vodka")
@@ -24,7 +24,7 @@ class BaseJson: ObservableObject {
                         decoder.dateDecodingStrategy = .iso8601
                         let item = try decoder.decode(BaseData.self, from: data)
                         DispatchQueue.main.async {
-                            self.description = item.ingredients.strDescription
+                            self.items = item.ingredients
                             //print(item)
                         }
                     } catch {
@@ -32,7 +32,7 @@ class BaseJson: ObservableObject {
                     }
                 }
                 else {
-                    print(error)
+                    print("error")
                 }
             }.resume()
         }

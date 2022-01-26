@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct Base: View {
-    var baseName: String
-    @StateObject var baseJson = BaseJson()
+    var item: StoreItemBase
     
     var body: some View {
-        Text(baseName.description)
-    }
-}
-
-struct Base_Previews: PreviewProvider {
-    static var previews: some View {
-        Base(baseName: "vodka")
+        VStack {
+            Text(item.strIngredient)
+                .font(.system(size: 40))
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            Spacer()
+                .frame(height: 10)
+            Text(item.strDescription)
+                .font(.system(size: 20))
+        }
     }
 }

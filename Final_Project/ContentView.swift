@@ -20,19 +20,14 @@ struct ContentView: View {
                         Image(systemName: "scroll")
                         Text("六大基酒介紹")
                 }
-                /*Others()
-                    .tabItem {
-                        Image(systemName: "wrench.and.screwdriver")
-                        Text("未加入的功能")
-                }*/
             }
             .accentColor(.orange)
         }
     }
 }
 
-/*struct ContentView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}*/
+}

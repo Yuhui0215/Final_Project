@@ -8,7 +8,7 @@
 import Foundation
 
 struct BaseData: Codable {
-    let ingredients: StoreItemBase
+    let ingredients: [StoreItemBase]
 }
 
 struct StoreItemBase: Codable {
